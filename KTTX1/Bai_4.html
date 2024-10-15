@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .menu ul{
+        background-color: rgb(13, 190, 36);
+        width: 250px;
+        padding: 0;
+        list-style-type: none;
+        text-align: left;
+    }
+
+    .menu li{
+        height: 40px;
+        width: auto;
+        line-height: 40px;
+        border-bottom: 1px solid white;
+        padding: 0 1em;
+    }
+
+    .menu li a{
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block;
+    }
+
+    .menu li:hover{
+        background-color: #cde3cd;
+    }
+
+    .menu ul li{
+        position: relative;
+    }
+
+    .menu .sub_menu{
+        position: absolute;
+        left: 253px;
+        top: 0;
+        display: none;
+    }
+
+    .menu li:hover .sub_menu{
+        display: block;
+    }
+</style>
+
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Tin tức</a>
+                <ul class="sub_menu">
+                    <li>WordPress</li>
+                    <li>SEO</li>
+                    <li>Hosting</li>
+                </ul>
+            </li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
